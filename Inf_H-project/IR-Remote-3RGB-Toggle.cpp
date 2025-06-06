@@ -124,6 +124,7 @@ void loop() {
                     digitalWrite(LED2_BLUE_PIN, LOW);
                     break;
 
+/*
                 case REMOTE_BUTTON_21:
                     Serial.println("Button 2/1: RGB  +10 Blue");
                     blue += 10;
@@ -177,7 +178,7 @@ void loop() {
                     Serial.println(String(red) + ", " + String(green) + ", " + String(blue));
                     analogWrite(RGB_LED_RED_PIN, red);
                     break;
-
+*/
                 default:
                     Serial.println(" Unknown command N/A");
                     break;

@@ -65,7 +65,7 @@ void resetIRReceiver() {
     Serial.println("*** IR Receiver appears stuck - resetting ***");
     IrReceiver.stop();
     delay(100);
-    IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
+    IrReceiver.begin(IR_RECEIVE_PIN);
     corruptedSignalCount = 0;
     Serial.println("IR Receiver reset complete");
 }
@@ -110,6 +110,7 @@ void setup() {
     
     Serial.println("IR Receiver initialized on pin D6");
     Serial.println("Ready to receive IR commands...");
+    
     
     lastValidIRTime = millis();
 }
